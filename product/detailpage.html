@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prmr</title>
+    <link rel="stylesheet" href="../src/css/base/reset.css" />
+    <link rel="stylesheet" href="../src/css/base/variables.css" />
+    <link rel="stylesheet" href="../src/css/component/txt.css" />
+    <link rel="stylesheet" href="../src/css/pages/layout.css" />
+    <link rel="stylesheet" href="../src/css/pages/main.css" />
+    <link rel="stylesheet" href="../src/css/component/card.css" />
+    <link rel="stylesheet" href="../src/css/pages/sub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../src/js/slide.js" defer></script>
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/product.js"></script>
+    <script src="../src/js/sub.js"></script>
+  </head>
+  <body>
+    <header id="header" class="two">
+      <h1 class="logo">
+        <a href="#"><img src="../assets/comn/h-logo-b.png" alt="" /></a>
+      </h1>
+      <div class="left">
+        <nav>
+          <ul>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">NEW</a></li>
+            <li class="mo-menu">
+              <img src="assets/comn/mo-menu.png" alt="" />
+            </li>
+          </ul>
+        </nav>
+        <p class="menu">
+          <button type="button" class="search">
+            <img src="../assets/comn/search-b.png" alt="" />
+          </button>
+          <button type="button" class="mypage">
+            <img src="../assets/comn/mypage-b.png" alt="" />
+          </button>
+          <button type="button" class="cart">
+            <img src="../assets/comn/cart-b.png" alt="" />
+          </button>
+        </p>
+      </div>
+    </header>
+
+    <div class="detail">
+      <div class="img-wrap box">
+        <!-- Slider main container -->
+        <div class="swiper detail-page">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide item">
+              <img src="../assets/detail/img-01.png" alt="" />
+            </div>
+            <div class="swiper-slide item">Slide 2</div>
+            <div class="swiper-slide item">Slide 3</div>
+          </div>
+          <div class="btn-wrap">
+            <button type="button" class="detail-prev">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="24" fill="white"></rect>
+                <path
+                  d="M30 36L18 24L30 12"
+                  stroke="#111111"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <button type="button" class="detail-next">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48"
+                  y="48"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(-180 48 48)"
+                  fill="white"
+                ></rect>
+                <path
+                  d="M18 12L30 24L18 36"
+                  stroke="#111111"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="pagenation"></div>
+        </div>
+      </div>
+      <div class="info-wrap box">
+        <div class="top">
+          <span class="best">BEST</span>
+          <div class="title-info">
+            <h3>오가니언스 베리어 리페어 카밍 에센스 토너 160ml</h3>
+            <p class="icon">
+              <button type="button">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 23.3333L5.20763 15.1283C2.93079 13.0024 2.93079 9.55364 5.20763 7.42775C7.48447 5.30186 11.1816 5.30186 13.4584 7.42775L14 7.9322L14.5416 7.42775C16.8184 5.30186 20.5155 5.30186 22.7924 7.42775C25.0692 9.55364 25.0692 13.0024 22.7924 15.1283L14 23.3333Z"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button type="button">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="7.58366"
+                    cy="14.5833"
+                    rx="2.91667"
+                    ry="2.91667"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                  />
+                  <ellipse
+                    cx="20.4167"
+                    cy="7.58334"
+                    rx="2.91667"
+                    ry="2.91667"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="20.4167"
+                    cy="20.4167"
+                    r="2.91667"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M10.5 12.8333L17.5 8.75"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 16.3333L17.5 19.25"
+                    stroke="#767676"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </p>
+          </div>
+          <p class="sub">
+            에멀젼 블렌딩으로 한층 깊고 넓게 스며드는 장벽 케어가 반복되는 피부
+            고민의 근본을 다잡아주는 장벽 리페어 65.8% 토너. 무너진 보습 균형을
+            부드럽게 채워주어 매일의 피부 컨디션을 편안하고 안정된 상태로
+            되돌려줍니다.
+          </p>
+        </div>
+        <div class="price">
+          <h3>29,000원</h3>
+          <div class="review">
+            <p class="txt">
+              <span>리뷰</span>
+              <span>760건</span>
+            </p>
+            <p class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_190_521)">
+                  <path
+                    d="M3.57557 14.8067L4.73989 9.77333L0.834961 6.38786L5.99376 5.94005L7.99996 1.19324L10.0062 5.94005L15.165 6.38786L11.26 9.77333L12.4243 14.8067L7.99996 12.1378L3.57557 14.8067Z"
+                    fill="#03624C"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_190_521">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>5.0</span>
+            </p>
+          </div>
+        </div>
+        <ul class="txt-list">
+          <li>
+            <span>배송비</span>
+            <span>3,000원 (50,000원 이상 구매 시 무료)</span>
+          </li>
+          <li>
+            <span>배송정보</span>
+            <span>지금 주문하면 <b>3일 이내</b> 발송예정</span>
+          </li>
+          <li>
+            <span>평균배송기일<button type="button" class="qu">?</button></span>
+            <span>3일</span>
+          </li>
+        </ul>
+        <div class="quantity">
+          <span>수량</span>
+          <p class="quan-btn">
+            <button type="button" class="minus">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.3337 8H2.66699"
+                  stroke="#111111"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <button type="button" class="num">1</button>
+            <button type="button" class="plus">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 2.66669V13.3334"
+                  stroke="#111111"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M13.3337 8H2.66699"
+                  stroke="#111111"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </p>
+        </div>
+        <div class="payment">
+          <div class="purchase">
+            <span>상품금액 합계 (할인적용)</span>
+            <h3>29,000원</h3>
+          </div>
+          <p class="payment-btn">
+            <button type="button">장바구니</button>
+            <button type="button">구매하기</button>
+          </p>
+          <p class="guide">
+            <span
+              >디바이스 구매 시 적용되는 메이크온 맴버십 혜택은 회원 전용이며
+              네이버페이, 비회원은 적용안되는 점 참고바랍니다.</span
+            >
+            <span
+              >인당 최대 구매제한이 있을수 있으며, 구매 정책을 위반 또는 오남용
+              시 주문이 취소될 수 있으며 “메이크온 맴버십” 이용에 제한이 있을 수
+              있습니다.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-container">
+      <div class="tab-line">
+        <ul class="tab-menu">
+          <li class="on">상품정보</li>
+          <li>후기<span>6</span></li>
+          <li>구매정보</li>
+          <li>문의<span>10</span></li>
+        </ul>
+      </div>
+
+      <div class="prdetail-wrap box">
+        <div class="prdetail">
+          <div class="img-container">
+            <figure>
+              <img src="../assets/detail/detail.jpg" alt="상품 상세 이미지" />
+            </figure>
+          </div>
+          <button type="button" id="toggleDetailButton">더보기</button>
+        </div>
+      </div>
+
+      <div class="table-wrap box">
+        <div class="txt">
+          <h4>제품 성분</h4>
+          <p>세라마이드 3%, 판테놀 5%, 히알루론산 복합체, 병풀추출물</p>
+        </div>
+        <ul class="table">
+          <li>
+            <div class="thead">제품 주요 성분</div>
+            <div class="tbody">
+              세라마이드 3%, 판테놀 5%, 히알루론산 복합체, 병풀추출물
+            </div>
+          </li>
+          <li>
+            <div class="thead">색상/제형</div>
+            <div class="tbody">투명 에센스 타입 (LIGHT GEL)</div>
+          </li>
+          <li>
+            <div class="thead">용량</div>
+            <div class="tbody">150ml</div>
+          </li>
+          <li>
+            <div class="thead">제조사</div>
+            <div class="tbody">프리메라</div>
+          </li>
+          <li>
+            <div class="thead">제조국</div>
+            <div class="tbody">대한민국</div>
+          </li>
+          <li>
+            <div class="thead">사용 방법 및 주의사항</div>
+            <div class="tbody">
+              세안 후 적당량을 피부에 부드럽게 흡수시켜 주세요. 민감 피부는 패치
+              테스트 후 사용 권장.
+            </div>
+          </li>
+          <li>
+            <div class="thead">제조연월</div>
+            <div class="tbody">2024.02</div>
+          </li>
+          <li>
+            <div class="thead">제품 안전 인증 정보</div>
+            <div class="tbody">
+              식약처 기능성 화장품 인증 완료 (미백/주름개선 2중 기능성)<br />
+              ※ 인증 정보는 브랜드 기준으로 등록되어 있으며, 상세 인증 사항은
+              제품 패키지 및 브랜드 사이트 참고 바랍니다.
+              <a href="#"
+                >제품 인증안전 검색<svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 2L8 6L4 10"
+                    stroke="#111111"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
