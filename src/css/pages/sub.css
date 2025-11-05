@@ -199,7 +199,7 @@
   color: var(--primary);
 }
 
-.detail .info-wrap ul.txt-list li span .qu {
+button.qu {
   font-size: 14px;
   line-height: 14px;
   width: 24px;
@@ -325,12 +325,18 @@
 
 .sub-container {
   margin: 0 auto;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
+}
+
+.sub-container.two {
+  max-width: 1760px;
+  padding: 80px 40px;
 }
 
 .sub-container .box {
   max-width: 1280px;
   margin: 0 auto;
+  margin-bottom: 140px;
 }
 
 .sub-container .tab-line {
@@ -429,14 +435,14 @@
   max-height: 5000px;
 }
 
-.sub-container .table-wrap .txt {
+.sub-container .txt {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
 }
 
-.sub-container .table-wrap .txt h4 {
+.sub-container .txt h4 {
   font-family: var(--font);
   font-size: 28px;
   line-height: 36px;
@@ -444,7 +450,7 @@
   color: var(--sub-primary-txt);
 }
 
-.sub-container .table-wrap .txt p {
+.sub-container .txt p {
   font-family: var(--font);
   font-size: 14px;
   line-height: 20px;
@@ -484,4 +490,392 @@
 .sub-container .table-wrap ul.table li .tbody a {
   display: block;
   margin-top: 16px;
+}
+
+/* ---------------------------- */
+
+.review .txt {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.review .rating-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.review .rating-summary .left .score {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review .rating-summary .left .score .star {
+  display: flex;
+  gap: 2px;
+}
+
+.review .rating-summary .left .score .star img {
+  width: 22px;
+}
+
+.review .rating-summary .left .score h3 {
+  font-family: var(--font);
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: var(--medium);
+}
+
+.review .rating-summary .left .info {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+}
+
+.review .rating-summary .detail-analysis {
+  display: flex;
+  gap: 40px;
+}
+
+.review .rating-summary .detail-analysis .container h4 {
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: var(--medium);
+  margin-bottom: 10px;
+}
+
+.review .rating-summary .detail-analysis .container ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.review .rating-summary .detail-analysis .container ul li:last-child {
+  margin-bottom: 0;
+}
+
+.review .rating-summary .detail-analysis .container ul li span {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+}
+
+.review .rating-summary .detail-analysis .container ul li span.tit {
+  width: 68px;
+}
+
+.review .rating-summary .detail-analysis .container ul li span.percent {
+  width: 50px;
+  text-align: right;
+}
+
+.review .rating-summary .detail-analysis .container ul li span.percent.on {
+  color: var(--primary);
+  font-weight: var(--medium);
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar {
+  width: 172px;
+  height: 4px;
+  background: #f5f5f6;
+  border-radius: 5px;
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar .fill {
+  height: 100%; /* 바의 높이는 100%로 고정 */
+  border-radius: 5px; /* 둥근 모서리 */
+  /* 기본 배경색 (낮은 비율일 때) */
+  background: #ddd;
+  /* width는 각 퍼센트 클래스에서 정의 */
+}
+
+/* 퍼센트별 너비 */
+.review .rating-summary .detail-analysis .container ul li .bar .fill.p20 {
+  width: 20%;
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar .fill.p40 {
+  width: 40%;
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar .fill.p60 {
+  width: 60%;
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar .fill.p80 {
+  width: 80%;
+}
+
+/* 100%일 때 배경색 강조 */
+.review .rating-summary .detail-analysis .container ul li .bar .fill.p100 {
+  width: 100%;
+  background: var(--primary); /* 강조 색상 적용 */
+}
+
+.review .rating-summary .detail-analysis .container ul li .bar .fill.on {
+  background: var(--primary);
+}
+
+.review .sub-txt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.review .sub-txt span {
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: var(--medium);
+  color: var(--sub-primary-txt);
+}
+
+.review .sub-txt .right-menu {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--medium);
+  color: var(--sub-tertiary-txt);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.review .photo {
+  margin-bottom: 60px;
+}
+
+.review .photo-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.review .reply ul.table-wrap {
+  border-top: 1px solid var(--sub-primary-txt);
+}
+
+.review .reply ul.table-wrap li {
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5ec;
+}
+
+.review .reply ul.table-wrap li .top {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review .reply ul.table-wrap li .top .star {
+  display: flex;
+  align-items: center;
+}
+
+.review .reply ul.table-wrap li .top .star .img-list {
+  margin-bottom: 2px;
+  margin-right: 6px;
+}
+
+.review .reply ul.table-wrap li .top .star .img-list img {
+  width: 14px;
+}
+
+.review .reply ul.table-wrap li .top .star span {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: var(--medium);
+  color: var(--sub-primary-txt);
+}
+
+.review .reply ul.table-wrap li .top figure {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review .reply ul.table-wrap li .top figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.review .reply ul.table-wrap li .top .profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review .reply ul.table-wrap li .top .profile .info .name b {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--medium);
+  color: var(--sub-primary-txt);
+}
+
+.review .reply ul.table-wrap li .top .profile .info .name span {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+  margin-left: 2px;
+}
+
+.review .reply ul.table-wrap li .top .profile .info .date {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+}
+
+.review .reply ul.table-wrap li .txt {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+  margin-bottom: 24px;
+}
+
+.review .reply ul.table-wrap li .photo-img {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.review .reply ul.table-wrap li .photo-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.review .reply ul.table-wrap li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-primary-txt);
+  border: 1px solid #e5e5ec;
+  border-radius: 50px;
+  width: 114px;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.review .reply ul.table-wrap li button:hover {
+  background: #fafafa;
+}
+
+.review .reply .pagenation-container {
+  margin-top: 28px;
+}
+
+/* ---------------------------------- */
+
+.pagenation-container {
+  display: flex;
+  gap: 4px;
+}
+
+.pagenation-container button {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagenation-container button:hover {
+  background: #f7f7fb;
+}
+
+.pagenation-container button.on {
+  color: var(--sub-primary-txt);
+}
+
+/* -------------------- */
+
+.sub-title {
+  font-family: var(--font);
+  font-size: 56px;
+  line-height: 66px;
+  font-weight: var(--bold);
+  color: var(--sub-primary-txt);
+  margin-bottom: 44px;
+}
+
+.tab-menu {
+  display: flex;
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.tab-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e5e5ec;
+  left: 0;
+  bottom: 0;
+}
+
+.tab-menu button {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--medium);
+  color: #999;
+  padding: 14px 20px;
+}
+
+.tab-menu button.active {
+  position: relative;
+  color: var(--primary);
+}
+
+.tab-menu button.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+}
+
+.product-list-head {
+  margin-bottom: 18px;
+}
+
+.product-list-head span {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--light);
+  color: var(--sub-tertiary-txt);
+}
+
+.product-list-head span b {
+  color: var(--primary);
 }

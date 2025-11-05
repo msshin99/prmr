@@ -161,3 +161,11 @@ const detailPage = new Swiper(".detail-page", {
     clickable: true, // 점을 클릭하여 슬라이드 이동 가능하게 설정
   },
 });
+
+// -----------------------
+
+const photoList = new Swiper(".photo-list", {
+  slidesPerView: 7,
+  spaceBetween: 4,
+  loop: true,
+});

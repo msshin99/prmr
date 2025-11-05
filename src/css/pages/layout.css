@@ -11,7 +11,7 @@
   position: relative;
 }
 
-#header.two .left nav ul li a {
+#header.two .left nav ul li {
   color: var(--sub-primary-txt);
 }
 
@@ -48,7 +48,7 @@
   display: none;
 }
 
-#header .left nav ul li a {
+#header .left nav ul li {
   font-family: var(--font);
   font-size: 16px;
   line-height: 24px;

@@ -1,6 +1,13 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px 24px;
+}
+
 .product-list .item {
   position: relative;
   max-width: 402px !important;
+  cursor: pointer;
 }
 
 .product-list .item img {
