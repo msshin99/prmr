@@ -214,6 +214,7 @@
 }
 
 button.qu {
+  color: var(--sub-primary-txt);
   font-size: 14px;
   line-height: 14px;
   width: 24px;
@@ -713,7 +714,7 @@ button.qu {
 
   .sub-container .txt {
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 2px;
   }
 
   .sub-container .txt h4 {
@@ -1091,6 +1092,10 @@ button.qu {
 }
 
 @media (max-width: 767px) {
+  .review .txt {
+    gap: 2px;
+  }
+
   .review .rating-summary {
     gap: 14px;
   }
@@ -1108,13 +1113,20 @@ button.qu {
   }
 
   .review .rating-summary .left .score h3 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .review .rating-summary .detail-analysis .container h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
   }
 
   .review .rating-summary .detail-analysis {
     width: 100%;
     flex-direction: column;
+    gap: 20px;
   }
 
   .review .rating-summary .detail-analysis .container {
