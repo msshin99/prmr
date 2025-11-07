@@ -583,11 +583,11 @@ section {
   }
 
   .md-pick .md-list .item .product-img .top {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
   .md-pick .md-list .item .product-img .bg-txt {
-    top: 32%;
+    top: 50%;
   }
 
   .md-pick .md-list .item .product-img .txt p {

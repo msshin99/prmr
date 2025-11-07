@@ -233,6 +233,7 @@ button.qu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .detail .info-wrap .quantity span {
@@ -398,7 +399,7 @@ button.qu {
 
   .detail .info-wrap {
     padding: 24px 16px;
-    gap: 18px;
+    gap: 24px;
   }
 
   .detail .info-wrap h3 {
@@ -410,13 +411,30 @@ button.qu {
     width: 320px;
   }
 
+  .detail .info-wrap .top .best {
+    width: 60px;
+    padding: 2px 0;
+  }
+
   .detail .info-wrap .top .title-info {
     margin-bottom: 12px;
   }
 
+  .detail .info-wrap ul.txt-list {
+    padding: 12px 0;
+  }
+
+  .detail .info-wrap ul.txt-list li {
+    margin-bottom: 8px;
+  }
+
   .detail .info-wrap ul.txt-list li span {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
+  }
+
+  .detail .info-wrap ul.txt-list li span:first-child {
+    width: 102px;
   }
 
   .detail .info-wrap .top .sub {
@@ -433,6 +451,12 @@ button.qu {
     height: 480px;
   }
 
+  .detail .info-wrap .price .review .icon span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: -1px;
+  }
+
   .detail .info-wrap .payment .payment-btn {
     flex-direction: column;
     gap: 6px;
@@ -443,6 +467,33 @@ button.qu {
     padding: 14px 10px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .detail .info-wrap .quantity .quan-btn button {
+    font-size: 14px;
+  }
+
+  .detail .info-wrap .quantity span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .detail .info-wrap .quantity .quan-btn button.num {
+    width: 46px;
+  }
+
+  .detail .info-wrap .quantity .quan-btn button.plus,
+  .minus {
+    width: 32px;
+    height: 32px;
+  }
+
+  button.qu {
+    font-size: 12px;
+    line-height: 12px;
+    width: 22px;
+    height: 22px;
+    margin-left: 4px;
   }
 }
 
@@ -627,6 +678,11 @@ button.qu {
     padding: 16px 8px;
   }
 
+  .sub-container .txt h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
   .sub-container .box {
     margin-bottom: 100px;
   }
@@ -652,6 +708,16 @@ button.qu {
 @media (max-width: 767px) {
   .sub-container {
     padding: 0 16px;
+  }
+
+  .sub-container .txt {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .sub-container .txt h4 {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .sub-container .box {
@@ -680,7 +746,7 @@ button.qu {
   .sub-container ul.tab-menu li span {
     font-size: 12px;
     line-height: 18px;
-    padding: 2px 14px;
+    padding: 2px 8px;
     border-radius: 10px;
     margin-left: 4px;
   }
@@ -1024,6 +1090,10 @@ button.qu {
 }
 
 @media (max-width: 767px) {
+  .review .rating-summary {
+    gap: 14px;
+  }
+
   .review .rating-summary .left {
     padding: 14px;
   }
@@ -1052,10 +1122,11 @@ button.qu {
 
   .review .rating-summary .detail-analysis .container ul li {
     width: 100%;
+    margin-bottom: 6px;
   }
 
   .review .rating-summary .detail-analysis .container ul li span.tit {
-    width: 84px;
+    width: 100px;
   }
 
   .review .rating-summary .detail-analysis .container ul li .bar {
