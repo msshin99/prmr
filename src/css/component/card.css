@@ -136,6 +136,10 @@
   gap: 16px;
 }
 
+.product-list .item .info .review .score svg path {
+  fill: var(--primary);
+}
+
 .product-list .item .info .review .score {
   display: flex;
   align-items: center;

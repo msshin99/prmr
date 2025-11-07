@@ -165,7 +165,21 @@ const detailPage = new Swiper(".detail-page", {
 // -----------------------
 
 const photoList = new Swiper(".photo-list", {
-  slidesPerView: 7,
+  slidesPerView: 3,
   spaceBetween: 4,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 5,
+      spaceBetween: 4,
+    },
+    1280: {
+      slidesPerView: 7,
+      spaceBetween: 4,
+    },
+  },
 });

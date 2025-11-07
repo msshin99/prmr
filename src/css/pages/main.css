@@ -289,6 +289,9 @@ section {
     flex-direction: row;
     padding-left: 0;
     margin-bottom: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
 
   .product.recommend .left ul.pr-tab-list li {
@@ -320,6 +323,9 @@ section {
   .product .left {
     width: fit-content;
     flex-basis: fit-content;
+    width: 100%;
+    /* flex-basis는 flex 컨테이너 내에서만 작동하지만, 안전을 위해 제거하거나 auto로 설정 */
+    flex-basis: auto;
   }
 
   .product.best {
@@ -341,7 +347,7 @@ section {
   }
 
   .product.recommend .left ul.pr-tab-list {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .product.recommend .left ul.pr-tab-list li {
