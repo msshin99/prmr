@@ -1149,6 +1149,15 @@ button.qu {
   .review .rating-summary .detail-analysis .container ul li span.percent {
     width: 60px;
   }
+
+  .review .sub-txt {
+    margin-bottom: 14px;
+  }
+
+  .review .sub-txt span {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 /* ---------------------------------- */
